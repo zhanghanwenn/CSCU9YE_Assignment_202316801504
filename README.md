@@ -20,8 +20,17 @@ by the module team on the assessment coversheet.
 | `multi_resource_n28_m2.txt` | Supplied problem instance 1 (n=28, m=2). |
 | `multi_resource_n90_m5.txt` | Supplied problem instance 2 (n=90, m=5). |
 | `workload_data_loader.py` | Supplied dataset parsing utility. |
+| `development_scripts/` | The successive working scripts used during development, kept in chronological stages (01 → 06). Together with the commit history they show how the code evolved. |
 
 ## How the work was developed
+
+The **commit history** of this repository is itself part of the evidence: it records the
+development in order — adding the data, validating the instances, a first hill climber, an
+iterated version with perturbation, the modular GA, a penalty-coefficient tuning pass after
+an initial failure, the empirical study, and finally the notebook and report. The scripts in
+`development_scripts/` preserve the working code at these stages:
+`01_data_validation.py`, `02_hill_climber_v1.py`, `03_hill_climber_ils.py`,
+`04_genetic_algorithm.py`, `05_penalty_tuning.py`, `06_empirical_study.py`.
 
 The `Development_Log_Proof_of_Process.pdf` documents the process in detail: the brief was
 analysed and the problem formulated as a 0-1 multi-dimensional knapsack problem; a baseline
